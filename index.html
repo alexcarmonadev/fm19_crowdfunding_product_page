@@ -29,10 +29,8 @@
     <meta name="author" content="Alexcarmonadev" />
   </head>
   <body id="body">
-    <!-- ------------OVERLAY------------ -->
     <div class="overlay overlay--hidden"></div>
 
-    <!-- ------------HEADER------------ -->
     <header class="header">
       <div class="header-contain">
         <a href="#" class="logo">
@@ -69,7 +67,7 @@
           </div>
         </nav>
       </div>
-      <section class="header-hero">
+      <div class="header-hero">
         <picture>
           <source
             media="(min-width: 468px)"
@@ -77,12 +75,10 @@
           />
           <img src="assets/images/image-hero-mobile.jpg" alt="Image-hero" />
         </picture>
-      </section>
+      </div>
     </header>
 
-    <!-- ------------MAIN------------ -->
     <main class="main">
-      <!-- ------------SECTION INTRO------------ -->
       <section class="s-intro card">
         <img
           src="assets/images/logo-mastercraft.svg"
@@ -128,7 +124,6 @@
         </div>
       </section>
 
-      <!-- ------------SECTION STATS------------ -->
       <section class="s-stats card">
         <div class="s-stats__groups">
           <div class="s-stats__group">
@@ -149,7 +144,6 @@
         </div>
       </section>
 
-      <!-- ------------SECTION ABOUT------------ -->
       <section class="s-about card">
         <div class="s-about__texts">
           <h2 class="s-about__title">About this project</h2>
@@ -167,9 +161,7 @@
           </p>
         </div>
 
-        <!-- ------------SECTION ABOUT CARDS------------ -->
         <div class="s-about__cards">
-          <!-- ------------SECTION ABOUT CARD 1------------ -->
           <div class="s-about__card">
             <div class="s-about-header">
               <h3 class="s-about-header__title">Bamboo Stand</h3>
@@ -193,7 +185,6 @@
             </div>
           </div>
 
-          <!-- ------------SECTION ABOUT CARD 2------------ -->
           <div class="s-about__card">
             <div class="s-about-header">
               <h3 class="s-about-header__title">Black Edition Stand</h3>
@@ -217,7 +208,6 @@
             </div>
           </div>
 
-          <!-- ------------SECTION ABOUT CARD 3------------ -->
           <div class="s-about__card">
             <div class="s-about-header">
               <h3 class="s-about-header__title">Mahogany Special Edition</h3>
@@ -244,7 +234,6 @@
       </section>
     </main>
 
-    <!-- ------------SECTION MODAL------------ -->
     <section class="modal" id="modal">
       <div class="modal-header">
         <div class="modal-header__group">
@@ -261,13 +250,12 @@
         </p>
       </div>
 
-      <!-- ------------SECTION MODAL CARDS------------ -->
-      <section class="modal-cards">
-        <!-- ------------SECTION MODAL CARD 1------------ -->
+      <div class="modal-cards">
         <div class="modal-card modal-card--one">
           <div class="modal-card-header">
             <input
               class="modal-radio__input"
+              id="no-reward"
               type="radio"
               name="no-reward"
               value="no-reward"
@@ -298,6 +286,7 @@
                   value="10"
                   name="pledge"
                   class="modal-card-footer__input"
+                  id="pledge"
                   required
                 />
                 <button
@@ -312,17 +301,17 @@
           </div>
         </div>
 
-        <!-- ------------SECTION MODAL CARD 2------------ -->
         <div class="modal-card">
           <div class="modal-card-header">
             <input
               class="modal-radio__input"
+              id="no-reward2"
               type="radio"
               name="no-reward"
               value="no-reward"
             />
             <div class="modal-radio__texts">
-              <label for="no-reward" class="modal-radio__label"
+              <label for="no-reward2" class="modal-radio__label"
                 >Bamboo Stand</label
               >
               <p class="modal-radio__text">Pledge $25 or more</p>
@@ -345,13 +334,14 @@
             <form action="#" class="modal-card__form">
               <p class="modal-card__form--text text-light">Enter your pledge</p>
               <div class="modal-card-footer__btns">
-                <label for="pledge">$</label>
+                <label for="pledge2">$</label>
                 <input
                   type="number"
                   min="25"
                   value="25"
                   name="pledge"
                   class="modal-card-footer__input"
+                  id="pledge2"
                   required
                 />
                 <button
@@ -366,17 +356,17 @@
           </div>
         </div>
 
-        <!-- ------------SECTION MODAL CARD 3------------ -->
         <div class="modal-card">
           <div class="modal-card-header">
             <input
               class="modal-radio__input"
+              id="no-reward3"
               type="radio"
               name="no-reward"
               value="no-reward"
             />
             <div class="modal-radio__texts">
-              <label for="no-reward" class="modal-radio__label"
+              <label for="no-reward3" class="modal-radio__label"
                 >Black Edition Stand</label
               >
               <p class="modal-radio__text">Pledge $75 or more</p>
@@ -401,13 +391,14 @@
             <form action="#" class="modal-card__form">
               <p class="modal-card__form--text text-light">Enter your pledge</p>
               <div class="modal-card-footer__btns">
-                <label for="pledge">$</label>
+                <label for="pledge3">$</label>
                 <input
                   type="number"
                   min="75"
                   value="75"
                   name="pledge"
                   class="modal-card-footer__input"
+                  id="pledge3"
                   required
                 />
                 <button
@@ -422,17 +413,17 @@
           </div>
         </div>
 
-        <!-- ------------SECTION MODAL CARD 4------------ -->
         <div class="modal-card">
           <div class="modal-card-header">
             <input
               class="modal-radio__input"
+              id="no-reward4"
               type="radio"
               name="no-reward"
               value="no-reward"
             />
             <div class="modal-radio__texts">
-              <label for="no-reward" class="modal-radio__label"
+              <label for="no-reward4" class="modal-radio__label"
                 >Mahogany Special Edition</label
               >
               <p class="modal-radio__text">Pledge $200 or more</p>
@@ -451,10 +442,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
-    <!-- ------------SECTION THANKS------------ -->
     <section class="thanks card">
       <img
         src="assets/images/icon-check.svg"
@@ -470,7 +460,6 @@
       <a href="#" class="thanks__link bottom-xl">Got it!</a>
     </section>
 
-    <!-- ------------FOOTER------------ -->
     <footer class="footer">
       <div class="attribution">
         Challenge by
